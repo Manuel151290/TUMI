@@ -1,0 +1,45 @@
+﻿@model TUMI.TIC.ClienteWeb.Models.ModeloTicket.CalificacionViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12 m-b-30">
+        <div class="page-title mb-2 mb-sm-0">
+            <h1>Califica mi Atención: TICKET N° @Model.CodigoTicket</h1>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card card-statistics">
+            <div class="card-body">
+                @if (ViewBag.Mensaje != null)
+                {
+                    <div class="alert alert-info">
+                        @ViewBag.Mensaje
+                    </div>
+                }
+                else
+                {
+                    <form asp-action="CalificarAtencion" method="post">
+                        <input type="hidden" asp-for="CodigoTicket" />
+                        <div class="form-group">
+                            <label for="Calificacion">Calificación</label>
+                            <select asp-for="Calificacion" class="form-control">
+                                <option value="1">1 - Malo</option>
+                                <option value="2">2 - Regular</option>
+                                <option value="3">3 - Bueno</option>
+                                <option value="4">4 - Muy Bueno</option>
+                                <option value="5">5 - Excelente</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Calificación</button>
+                    </form>
+                }
+            </div>
+        </div>
+    </div>
+</div>

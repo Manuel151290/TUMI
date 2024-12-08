@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "TUMI.TIC.ClienteApi/1.0.0": {
+        "dependencies": {
+          "TUMI.TIC.Modelo": "1.0.0"
+        },
+        "runtime": {
+          "TUMI.TIC.ClienteApi.dll": {}
+        }
+      },
+      "TUMI.TIC.Modelo/1.0.0": {
+        "runtime": {
+          "TUMI.TIC.Modelo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TUMI.TIC.ClienteApi/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TUMI.TIC.Modelo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

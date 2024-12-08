@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\PlantillaTrans\**" />
+    <Content Remove="wwwroot\PlantillaTrans\**" />
+    <EmbeddedResource Remove="wwwroot\PlantillaTrans\**" />
+    <None Remove="wwwroot\PlantillaTrans\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.28" />
+    <PackageReference Include="EPPlus" Version="7.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TUMI.TIC.BloqueDatos\TUMI.TIC.BloqueDatos.csproj" />
+    <ProjectReference Include="..\TUMI.TIC.Data\TUMI.TIC.Data.csproj" />
+    <ProjectReference Include="..\TUMI.TIC.Dominio.Contratos\TUMI.TIC.Dominio.Contratos.csproj" />
+    <ProjectReference Include="..\TUMI.TIC.Dominio\TUMI.TIC.Dominio.csproj" />
+    <ProjectReference Include="..\TUMI.TIC.Funciones\TUMI.TIC.Funciones.csproj" />
+    <ProjectReference Include="..\TUMI.TIC.Modelo\TUMI.TIC.Modelo.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\atenciones\evidencias\" />
+  </ItemGroup>
+
+</Project>

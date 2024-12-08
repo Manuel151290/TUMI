@@ -1,0 +1,391 @@
+﻿@using TUMI.TIC.Modelo.Entidades
+@model TUMI.TIC.ClienteWeb.Models.ModeloTicket.ViewModelTicketIndex
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-md-12 m-b-30">
+        <!-- begin page title -->
+        <div class="d-block d-sm-flex flex-nowrap align-items-center">
+            <div class="page-title mb-2 mb-sm-0">
+                <h1>Registro de ticket</h1>
+            </div>
+            <div class="ml-auto d-flex align-items-center">
+                <nav>
+                    <ol class="breadcrumb p-0 m-b-0">
+                        <li class="breadcrumb-item">
+                            <a href="/Portal/Index"><i class="ti ti-home"></i></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            Ticket
+                        </li>
+                        <li class="breadcrumb-item active text-primary" aria-current="page">Registrar</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- end page title -->
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="card card-statistics">
+        <div class="card-header">
+            <div class="card-heading">
+                <h4 class="card-title" style="text-transform: none;">Datos del usuario solicitante</h4>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="CodigoTicket">Nro Ticket</label>
+                    <input type="text" value="" disabled class="form-control" id="CodigoTicket" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="Codigo">Fecha Registro</label>
+                    <input type="text" value="@DateTime.Now.ToString("yyyy/MM/dd hh:mm:ss")" class="form-control" disabled/>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="Codigo">Usuario Solicitante</label>
+                    @Html.TextBoxFor(m => m.oColaborador.Nombre, new { @name = "oColaborador.Nombre", @class = "form-control", @type = "text", placeholder = "Ingrese Nombre", maxlength = 150, required = true, autofocus = false, autocomplete = false, disabled = true })
+
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="DescripcionArea">Unidad Orgánica</label>
+                    @Html.TextBoxFor(m => m.oColaborador.DescripcionArea, new { @name = "oColaborador.DescripcionArea", @class = "form-control", @type = "text", placeholder = "Ingrese Unidad Organica", maxlength = 150, required = true, autofocus = true, autocomplete = false, disabled=true })
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="Oficina">Oficina</label>
+                    @Html.TextBoxFor(m => m.oColaborador.DescripcionOficina, new { @name = "oColaborador.DescripcionOficina", @class = "form-control", @type = "text", placeholder = "Ingrese Oficina", required = true, autofocus = false, autocomplete = false, disabled=true })
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="card card-statistics">
+        <div class="card-header">
+            <div class="card-heading">
+                <h4 class="card-title" style="text-transform: none;">Datos del área responsable del ticket</h4>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="UnidadOrganica">Unidad Orgánica</label>
+                    @Html.DropDownList("CodigoUnidadOrganica", new SelectList((IEnumerable<UnidadOrganica>)Model.oListaUnidadOrganica, "Codigo", "Descripcion"), "-- Seleccione Unidad Orgánica --", new { @name = "UnidadOrganica", @class = "form-control", onchange = "ObtenerSubArea();" })
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="SubArea">Sub Área</label>
+                    <select id="CodigoSubUnidadOrganica" name="SubArea" class="form-control" onchange="ObtenerCategorias();">
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="Categoria">Categoría</label>
+                    <select id="CodigoCategoria" name="Categoria" class="form-control" onchange="ObtenerSubCategorias();">
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="SubCategoria">Sub Categoria</label>
+                    <select id="CodigoSubCategoria" name="SubCategoria" class="form-control">
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="card card-statistics">
+        <div class="card-header">
+            <div class="card-heading">
+                <h4 class="card-title" style="text-transform: none;">Descripción del ticket</h4>
+            </div>
+        </div>
+        <div class="card-body">
+            @Html.HiddenFor(m => m.oColaborador.Nombre, new { @name = "NombreColaboradorRegistro", id = "NombreColaboradorRegistro", @class = "form-control", required = true, autofocus = false, autocomplete = false })
+            @Html.HiddenFor(m => m.oColaborador.Correo, new { @name = "CorreoColaboradorRegistro", id = "CorreoColaboradorRegistro", @class = "form-control", required = true, autofocus = false, autocomplete = false })
+            @Html.HiddenFor(m => m.oColaborador.Codigo, new { @name = "CodigoColaboradorRegistro", id = "CodigoColaboradorRegistro", @class = "form-control",  required = true, autofocus = false, autocomplete = false })
+                <div class="form-row">
+                    <div class="col-12 mb-2">
+                        <div class="alert alert-info alert-icon" role="alert">
+                            <i class="fa fa-info-circle"></i> Estimado usuario es necesario que CONSIDERE:<br/>
+                            <ol style="color:white;">
+                                <li style="color: white;margin-left: 35px;">El sistema no permite el uso de los caracteres "< >"</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="DescripcionTicket">Describe su inconveniente</label>
+                        <textarea class="form-control" rows="3" id="Descripcion" name="Descripcion" placeholder="Ingrese descripción del incidente"></textarea>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="CelularContacto">Indíquenos su número de celular</label>
+                        <input type="text" placeholder="993685421" class="form-control" id="NumeroCelular" />
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="LugarTicket">¿Donde ocurrió el incidente?</label>
+                        @Html.DropDownList("CodigoLugar", new SelectList((IEnumerable<SelectTipoEntero>)Model.oListaLugarIncidente, "Codigo", "Descripcion"), "-- Seleccione Lugar --", new { @id = "CodigoLugar", @class = "form-control" })
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="AutorizadoTicket">Autorizado Por</label>
+                        @Html.DropDownList("CodigoResponsable", new SelectList((IEnumerable<SelectTipo>)Model.oListaResponsable, "Codigo", "Descripcion"), "-- Seleccione Responsable --", new { @name = "CodigoResponsable", @class = "form-control" })
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="ArchivoAdjunto">Archivo Adjunto (<span style="color:darkred;">Opcional</span>)</label>
+                        <input type="file" class="form-control-file" id="ArchivoAdjunto" />  
+                    </div>
+                    <div class="form-group col-md-12">
+                        <div class="alert alert-light alert-icon" role="alert">
+                            <i class="fa fa-info-circle"></i> Estimado usuario indicar si este registro de ticket afecta a:
+                        </div>
+                        <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="IndicadorSeguridadInformacion" value="SI">
+                        <label class="form-check-label" for="IndicadorSeguridadInformacion">Seguridad de la información(<span style="color:darkslategray">Afectó a la confidencialidad de un activo de información</span>)</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="IndicadorContinuidadNegocio" value="CN">
+                        <label class="form-check-label" for="IndicadorContinuidadNegocio">Continuidad del negocio(<span style="color:darkslategray">Afectó a la continuidad de tus labores</span>)</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary" style="float: right;" onclick="GuardarTicket();">REGISTRAR</button>
+            
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script type="text/javascript">
+        debugger
+        function ObtenerSubArea() {
+            let codigo = document.getElementById("CodigoUnidadOrganica").value;
+            const apiUrl = '@Url.ActionLink("Get", "SubArea")';
+            const params = {
+                codigo: codigo
+            };
+            const urlWithParams = new URL(apiUrl);
+            urlWithParams.search = new URLSearchParams(params).toString();
+            const selectSubArea = document.getElementById('CodigoSubUnidadOrganica');
+            fetch(urlWithParams)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Hubo un problema al realizar la solicitud.');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    selectSubArea.innerHTML = '';
+                    data.forEach(subArea => {
+                        const option = document.createElement('option');
+                        option.value = subArea.codigo;
+                        option.text = subArea.descripcion;
+                        selectSubArea.appendChild(option);
+                    });
+                    ObtenerCategorias();
+                })
+                .catch(error => {
+                    console.error('Se ha producido un error:', error);
+                });
+        }
+        function ObtenerCategorias() {
+            let codigo = document.getElementById("CodigoSubUnidadOrganica").value;
+            const apiUrl = '@Url.ActionLink("Get", "Categoria")';
+            const params = {
+                codigo: codigo
+            };
+            const urlWithParams = new URL(apiUrl);
+            urlWithParams.search = new URLSearchParams(params).toString();
+            const selectCategoria = document.getElementById('CodigoCategoria');
+            fetch(urlWithParams)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Hubo un problema al realizar la solicitud.');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    selectCategoria.innerHTML = '';
+                    data.forEach(subArea => {
+                        const option = document.createElement('option');
+                        option.value = subArea.codigo;
+                        option.text = subArea.descripcion;
+                        selectCategoria.appendChild(option);
+                    });
+                    ObtenerSubCategorias();
+                })
+                .catch(error => {
+                    console.error('Se ha producido un error:', error);
+                });
+        }
+        function ObtenerSubCategorias() {
+            let codigo = document.getElementById("CodigoCategoria").value;
+            const apiUrl = '@Url.ActionLink("Get", "SubCategoria")';
+            const params = {
+                codigo: codigo
+            };
+            const urlWithParams = new URL(apiUrl);
+            urlWithParams.search = new URLSearchParams(params).toString();
+            const selectSubCategoria = document.getElementById('CodigoSubCategoria');
+            fetch(urlWithParams)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Hubo un problema al realizar la solicitud.');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    selectSubCategoria.innerHTML = '';
+                    data.forEach(subArea => {
+                        const option = document.createElement('option');
+                        option.value = subArea.codigo;
+                        option.text = subArea.descripcion;
+                        selectSubCategoria.appendChild(option);
+                    });
+                })
+                .catch(error => {
+                    console.error('Se ha producido un error:', error);
+                });
+        }
+        function GuardarTicket(){
+            if (ValidarDatos()) {
+                let colaborador = document.getElementById("CodigoColaboradorRegistro").value;
+                let unidadorganica = document.getElementById("CodigoUnidadOrganica").value;
+                let subunidadorganica = document.getElementById("CodigoSubUnidadOrganica").value;
+                let categoria = document.getElementById("CodigoCategoria").value;
+                let subcategoria = document.getElementById("CodigoSubCategoria").value;
+                let lugar = document.getElementById("CodigoLugar").value;
+                let responsable = document.getElementById("CodigoResponsable").value;
+                let descripcion = document.getElementById("Descripcion").value;
+                let celular = document.getElementById("NumeroCelular").value;
+                let informacion = document.getElementById('IndicadorSeguridadInformacion').checked;
+                let negocio = document.getElementById('IndicadorContinuidadNegocio').checked;
+                let correo = document.getElementById("CorreoColaboradorRegistro").value;
+                let nombre = document.getElementById("NombreColaboradorRegistro").value;
+                let ticket = {
+                    CodigoColaboradorRegistro : colaborador,
+                    CodigoUnidadOrganica: unidadorganica,
+                    CodigoSubUnidadOrganica: subunidadorganica,
+                    CodigoCategoria: categoria,
+                    CodigoSubCategoria: subcategoria,
+                    CodigoLugar: lugar,
+                    CodigoResponsable: responsable,
+                    Descripcion: descripcion.replace(/</g, '&lt;').replace(/>/g, '&gt;'),
+                    NumeroCelular: celular,
+                    IndicadorSeguridadInformacion: informacion,
+                    IndicadorContinuidadNegocio: negocio,
+                    CorreoColaboradorRegistro: correo,
+                    NombreColaboradorRegistro : nombre
+                };
+
+                var formData = new FormData();
+                formData.append('oTicketJson', JSON.stringify(ticket));
+
+                const fileInput = document.getElementById('ArchivoAdjunto');
+                if (fileInput.files.length > 0) {
+                    formData.append('ArchivoAdjunto', fileInput.files[0]);
+                }
+
+                fetch('@Url.Action("RegistroJson","Ticket")', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Hubo un problema al enviar los datos.');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log('Respuesta del servidor:', data);
+                        document.querySelector('#CodigoTicket').value = data.ticket;
+                        swal({
+                            type: 'success',
+                            title: 'Registro Correcto',
+                            text: 'Se registró el ticket N° ' + data.ticket + ' con exito.'
+                        });
+                    })
+                    .catch(error => {
+                        console.error('Se ha producido un error:', error);
+                    });
+            }
+        }
+
+        function ValidarDatos() {
+            let unidadorganica = document.getElementById("CodigoUnidadOrganica").value;
+            let subunidadorganica = document.getElementById("CodigoSubUnidadOrganica").value;
+            let categoria = document.getElementById("CodigoCategoria").value;
+            let subcategoria = document.getElementById("CodigoSubCategoria").value;
+            let lugar = document.getElementById("CodigoLugar").value;
+            let responsable = document.getElementById("CodigoResponsable").value;
+            let descripcion = document.getElementById("Descripcion").value;
+            let celular = document.getElementById("NumeroCelular").value;
+
+            if (unidadorganica == undefined || unidadorganica == '') {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Seleccione Unidad Orgánica'
+                });
+                return false;
+            }
+            if (subunidadorganica == undefined || subunidadorganica == '') {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Seleccione Sub Unidad Orgánica'
+                });
+                return false;
+            }
+            if (categoria == undefined || categoria == '') {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Seleccione Categoria'
+                });
+                return false;
+            }
+            if (subcategoria == undefined || subcategoria == '') {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Seleccione Sub Categoria'
+                });
+                return false;
+            }
+            if (responsable == undefined || responsable == '') {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Seleccione Responsable de autorización'
+                });
+                return false;
+            }
+            if (lugar == undefined || lugar == '') {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Seleccione Lugar de incidencia'
+                });
+                return false;
+            }
+
+            if (celular == undefined || celular == '') {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Ingrese Número de Celular'
+                });
+                return false;
+            }
+
+            if (descripcion == undefined || descripcion == '') {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Ingrese Descripcion del Ticket'
+                });
+                return false;
+            }
+            return true;
+        }
+    </script>
+}

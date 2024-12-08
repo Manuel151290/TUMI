@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\TUMI.TIC.ClienteApi.props" />
+</Project>

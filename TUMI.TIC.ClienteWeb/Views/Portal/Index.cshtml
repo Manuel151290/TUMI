@@ -1,0 +1,102 @@
+﻿@model TUMI.TIC.ClienteWeb.Models.Portal.PortalViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-md-12 m-b-30">
+        <!-- begin page title -->
+        <div class="d-block d-lg-flex flex-nowrap align-items-center">
+            <div class="page-title mr-4 pr-4 border-right">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="breadcrumb-bar align-items-center">
+                <nav>
+                    <ol class="breadcrumb p-0 m-b-0">
+                        <li class="breadcrumb-item">
+                            <a href="/Portal/Index"><i class="ti ti-home"></i></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            Dashboard
+                        </li>
+                        <li class="breadcrumb-item active text-primary" aria-current="page">Inicio</li>
+                    </ol>
+                </nav>
+            </div>
+
+        </div>
+        <!-- end page title -->
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card card-statistics">
+            <div class="row no-gutters">
+                <div class="col-xxl-3 col-lg-6">
+                    <div class="p-20 border-lg-right border-bottom border-xxl-bottom-0">
+                        <div class="d-flex m-b-10">
+                            <p class="mb-0 font-regular text-muted font-weight-bold">Total Tickets</p>
+                        </div>
+                        <div class="d-block d-sm-flex h-100 align-items-center">
+                            <div class="apexchart-wrapper">
+                                <div id="analytics7"></div>
+                            </div>
+                            <div class="statistics mt-3 mt-sm-0 ml-sm-auto text-center text-sm-right">
+                                <h3 class="mb-0"><i class="icon-arrow-up-circle"></i> @Model.oTotales.TotalTickets</h3>
+                                <p>En este mes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-lg-6">
+                    <div class="p-20 border-xxl-right border-bottom border-xxl-bottom-0">
+                        <div class="d-flex m-b-10">
+                            <p class="mb-0 font-regular text-muted font-weight-bold">Total Atendidos</p>
+                        </div>
+                        <div class="d-block d-sm-flex h-100 align-items-center">
+                            <div class="apexchart-wrapper">
+                                <div id="analytics8"></div>
+                            </div>
+                            <div class="statistics mt-3 mt-sm-0 ml-sm-auto text-center text-sm-right">
+                                <h3 class="mb-0"><i class="icon-arrow-up-circle"></i> @Model.oTotales.TotalTicketsAtendidos</h3>
+                                <p>En este mes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-lg-6">
+                    <div class="p-20 border-lg-right border-bottom border-lg-bottom-0">
+                        <div class="d-flex m-b-10">
+                            <p class="mb-0 font-regular text-muted font-weight-bold">Tickets No Atendidos</p>
+                        </div>
+                        <div class="d-block d-sm-flex h-100 align-items-center">
+                            <div class="apexchart-wrapper">
+                                <div id="analytics9"></div>
+                            </div>
+                            <div class="statistics mt-3 mt-sm-0 ml-sm-auto text-center text-sm-right">
+                                <h3 class="mb-0"><i class="icon-arrow-up-circle"></i>@Model.oTotales.TotalTickersNoAtendidos</h3>
+                                <p>En este mes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-lg-6">
+                    <div class="p-20 border-lg-right border-bottom border-lg-bottom-0">
+                        <div class="d-flex m-b-10">
+                            <p class="mb-0 font-regular text-muted font-weight-bold">Colaboradores Activos</p>
+                            
+                        </div>
+                        <div class="d-block d-sm-flex h-100 align-items-center">
+                            <div class="apexchart-wrapper">
+                                <div id="apexchartsbtubctgh" class="apexcharts-canvas apexchartsbtubctgh" style="width: 120px; height: 50px;"><svg id="SvgjsSvg1193" width="120" height="50" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1195" class="apexcharts-inner apexcharts-graphical" transform="translate(0, 0)"><defs id="SvgjsDefs1194"><linearGradient id="SvgjsLinearGradient1198" x1="0" y1="0" x2="0" y2="1"><stop id="SvgjsStop1199" stop-opacity="0.4" stop-color="rgba(216,227,240,0.4)" offset="0"></stop><stop id="SvgjsStop1200" stop-opacity="0.5" stop-color="rgba(190,209,230,0.5)" offset="1"></stop><stop id="SvgjsStop1201" stop-opacity="0.5" stop-color="rgba(190,209,230,0.5)" offset="1"></stop></linearGradient><clipPath id="gridRectMaskbtubctgh"><rect id="SvgjsRect1204" width="120" height="50" x="0" y="0" rx="0" ry="0" fill="#ffffff" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect></clipPath><clipPath id="gridRectMarkerMaskbtubctgh"><rect id="SvgjsRect1205" width="128" height="58" x="-4" y="-4" rx="0" ry="0" fill="#ffffff" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect></clipPath></defs><line id="SvgjsLine1203" x1="59.07142513138908" y1="0" x2="59.07142513138908" y2="50" stroke-dasharray="3" class="apexcharts-xcrosshairs" x="59.07142513138908" y="0" width="1" height="50" fill="url(#SvgjsLinearGradient1198)" filter="none" fill-opacity="0.9" stroke-width="0"></line><g id="SvgjsG1224" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1225" class="apexcharts-xaxis-texts-g" transform="translate(0, 1.875)"></g></g><g id="SvgjsG1228" class="apexcharts-grid"><line id="SvgjsLine1230" x1="0" y1="50" x2="120" y2="50" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine1229" x1="0" y1="1" x2="0" y2="50" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG1207" class="apexcharts-bar-series apexcharts-plot-series" clip-path="url(#gridRectMaskbtubctgh)"><g id="SvgjsG1208" class="apexcharts-series series-1" rel="1" data:realIndex="0"><path id="apexcharts-bar-area-0" d="M 6.857142857142857 50L 6.857142857142857 40.14285714285714Q 8.571428571428571 38.42857142857142 10.285714285714285 40.14285714285714L 10.285714285714285 50L 6.857142857142857 50" fill="rgba(142,84,233,0.85)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMaskbtubctgh)" pathTo="M 6.857142857142857 50L 6.857142857142857 40.14285714285714Q 8.571428571428571 38.42857142857142 10.285714285714285 40.14285714285714L 10.285714285714285 50L 6.857142857142857 50" pathFrom="M 6.857142857142857 50L 6.857142857142857 50L 10.285714285714285 50L 10.285714285714285 50L 6.857142857142857 50" cy="39.285714285714285" cx="24" j="0" val="15" barWidth="3.4285714285714284"></path><path id="apexcharts-bar-area-0" d="M 24 50L 24 11.571428571428573Q 25.714285714285715 9.85714285714286 27.428571428571427 11.571428571428573L 27.428571428571427 50L 24 50" fill="rgba(142,84,233,0.85)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMaskbtubctgh)" pathTo="M 24 50L 24 11.571428571428573Q 25.714285714285715 9.85714285714286 27.428571428571427 11.571428571428573L 27.428571428571427 50L 24 50" pathFrom="M 24 50L 24 50L 27.428571428571427 50L 27.428571428571427 50L 24 50" cy="10.714285714285715" cx="41.14285714285714" j="1" val="55" barWidth="3.4285714285714284"></path><path id="apexcharts-bar-area-0" d="M 41.14285714285714 50L 41.14285714285714 7.999999999999996Q 42.857142857142854 6.285714285714281 44.57142857142857 7.999999999999996L 44.57142857142857 50L 41.14285714285714 50" fill="rgba(142,84,233,0.85)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMaskbtubctgh)" pathTo="M 41.14285714285714 50L 41.14285714285714 7.999999999999996Q 42.857142857142854 6.285714285714281 44.57142857142857 7.999999999999996L 44.57142857142857 50L 41.14285714285714 50" pathFrom="M 41.14285714285714 50L 41.14285714285714 50L 44.57142857142857 50L 44.57142857142857 50L 41.14285714285714 50" cy="7.142857142857139" cx="58.28571428571428" j="2" val="60" barWidth="3.4285714285714284"></path><path id="apexcharts-bar-area-0" d="M 58.28571428571428 50L 58.28571428571428 1.5714285714285654Q 59.99999999999999 -0.1428571428571488 61.71428571428571 1.5714285714285654L 61.71428571428571 50L 58.28571428571428 50" fill="rgba(142,84,233,0.85)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMaskbtubctgh)" pathTo="M 58.28571428571428 50L 58.28571428571428 1.5714285714285654Q 59.99999999999999 -0.1428571428571488 61.71428571428571 1.5714285714285654L 61.71428571428571 50L 58.28571428571428 50" pathFrom="M 58.28571428571428 50L 58.28571428571428 50L 61.71428571428571 50L 61.71428571428571 50L 58.28571428571428 50" cy="0.7142857142857082" cx="75.42857142857142" j="3" val="69" barWidth="3.4285714285714284"></path><path id="apexcharts-bar-area-0" d="M 75.42857142857142 50L 75.42857142857142 12.999999999999996Q 77.14285714285712 11.285714285714283 78.85714285714285 12.999999999999996L 78.85714285714285 50L 75.42857142857142 50" fill="rgba(142,84,233,0.85)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMaskbtubctgh)" pathTo="M 75.42857142857142 50L 75.42857142857142 12.999999999999996Q 77.14285714285712 11.285714285714283 78.85714285714285 12.999999999999996L 78.85714285714285 50L 75.42857142857142 50" pathFrom="M 75.42857142857142 50L 75.42857142857142 50L 78.85714285714285 50L 78.85714285714285 50L 75.42857142857142 50" cy="12.142857142857139" cx="92.57142857142856" j="4" val="53" barWidth="3.4285714285714284"></path><path id="apexcharts-bar-area-0" d="M 92.57142857142856 50L 92.57142857142856 25.857142857142858Q 94.28571428571426 24.142857142857142 95.99999999999999 25.857142857142858L 95.99999999999999 50L 92.57142857142856 50" fill="rgba(142,84,233,0.85)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMaskbtubctgh)" pathTo="M 92.57142857142856 50L 92.57142857142856 25.857142857142858Q 94.28571428571426 24.142857142857142 95.99999999999999 25.857142857142858L 95.99999999999999 50L 92.57142857142856 50" pathFrom="M 92.57142857142856 50L 92.57142857142856 50L 95.99999999999999 50L 95.99999999999999 50L 92.57142857142856 50" cy="25" cx="109.7142857142857" j="5" val="35" barWidth="3.4285714285714284"></path><path id="apexcharts-bar-area-0" d="M 109.7142857142857 50L 109.7142857142857 12.285714285714281Q 111.4285714285714 10.571428571428568 113.14285714285712 12.285714285714281L 113.14285714285712 50L 109.7142857142857 50" fill="rgba(142,84,233,0.85)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMaskbtubctgh)" pathTo="M 109.7142857142857 50L 109.7142857142857 12.285714285714281Q 111.4285714285714 10.571428571428568 113.14285714285712 12.285714285714281L 113.14285714285712 50L 109.7142857142857 50" pathFrom="M 109.7142857142857 50L 109.7142857142857 50L 113.14285714285712 50L 113.14285714285712 50L 109.7142857142857 50" cy="11.428571428571423" cx="126.85714285714283" j="6" val="54" barWidth="3.4285714285714284"></path><g id="SvgjsG1209" class="apexcharts-datalabels"></g></g></g><line id="SvgjsLine1231" x1="0" y1="0" x2="120" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1232" x1="0" y1="0" x2="120" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1233" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1234" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1235" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect1202" width="0" height="0" x="0" y="0" rx="0" ry="0" fill="#fefefe" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect><g id="SvgjsG1226" class="apexcharts-yaxis" rel="0" transform="translate(-21, 0)"><g id="SvgjsG1227" class="apexcharts-yaxis-texts-g"></g></g></svg><div class="apexcharts-legend"></div><div class="apexcharts-tooltip light" style="left: 59.5714px; top: -17.3px;"><div class="apexcharts-tooltip-series-group active" style="display: flex;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(142, 84, 233); display: none;"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label"></span><span class="apexcharts-tooltip-text-value">69</span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div></div>
+                            </div>
+                            <div class="statistics mt-3 mt-sm-0 ml-sm-auto text-center text-sm-right">
+                                <h3 class="mb-0"><i class="icon-arrow-up-circle"></i>@Model.oTotales.TotalColaboradoresActivos</h3>
+                                <p>En todo el periodo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

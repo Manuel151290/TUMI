@@ -1,0 +1,292 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-md-12 m-b-30">
+        <!-- begin page title -->
+        <div class="d-block d-sm-flex flex-nowrap align-items-center">
+            <div class="page-title mb-2 mb-sm-0">
+                <h1>Reportes</h1>
+            </div>
+            <div class="ml-auto d-flex align-items-center">
+                <nav>
+                    <ol class="breadcrumb p-0 m-b-0">
+                        <li class="breadcrumb-item">
+                            <a href="/Portal/Index"><i class="ti ti-home"></i></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            Reporte
+                        </li>
+                        <li class="breadcrumb-item active text-primary" aria-current="page">Tipos de Reportes</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- end page title -->
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card card-statistics mb-30">
+            <div class="card-header">
+                <h4 class="card-title">Reporte Consolidado</h4>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Por unidad orgánica</h5>
+                <p class="card-text text-justify">Descargar reporte por unidades orgánicas y totales de tickets, atendidos y no atendidos.</p>
+                <a href="/Reporte/PorUnidadOrganica" class="btn btn-danger mt-2" style="float:right !important;">Descargar Reporte</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card card-statistics">
+            <div class="card-header">
+                <h4 class="card-title">Reporte Detallado</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Fecha Inicial</label>
+                        <input type="date" class="form-control" id="fechaInicial" />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Fecha Final</label>
+                        <input type="date" class="form-control" id="fechaFinal" />
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="btn btn-danger mt-2" style="float:right !important;" id="descargar">Descargar Reporte</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card card-statistics">
+            <div class="card-header">
+                <h4 class="card-title">Reporte de Tickets</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="fechaInicialTickets">Fecha Inicial</label>
+                        <input type="date" class="form-control" id="fechaInicialTickets" />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="fechaFinalTickets">Fecha Final</label>
+                        <input type="date" class="form-control" id="fechaFinalTickets" />
+                    </div>
+                </div>
+                <button class="btn btn-danger mt-2 mb-3" style="float:right !important;" id="procesarReporte">Procesar</button>
+                <div class="table-responsive mt-4">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Nivel de Calificación</th>
+                                <th>Cantidad</th>
+                                <th>Porcentaje</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablaReporteTickets">
+                            <!-- Contenido dinámico -->
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Total Tickets</th>
+                                <th id="totalTickets">0</th>
+                                <th id="porcentajeTotal">100%</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <button class="btn btn-success mt-3" style="float:right !important;" id="descargarExcel">Descargar Excel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    document.getElementById('descargar').addEventListener('click', function () {
+        var fechaInicial = document.getElementById('fechaInicial').value;
+        var fechaFinal = document.getElementById('fechaFinal').value;
+
+        if (fechaFinal >= fechaInicial) {
+            var fechaInicial = document.getElementById('fechaInicial').value;
+            var fechaFinal = document.getElementById('fechaFinal').value;
+            var nombreArchivo = 'ReporteDetallado_' + obtenerFechaActual() + '.xlsx';
+            var url = '/Reporte/PorFechas?fechaInicial=' + fechaInicial + '&fechaFinal=' + fechaFinal;
+
+            var enlaceTemporal = document.createElement('a');
+            enlaceTemporal.setAttribute('href', url);
+            enlaceTemporal.setAttribute('download', nombreArchivo);
+            enlaceTemporal.click();
+        }else{
+            if (fechaFinal == '' || fechaInicial == '') {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Por favor seleccionar Fecha Inicial y Fecha Final.'
+                });
+            } else {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'La fecha inicial no debe ser mayor a la fecha final.'
+                });
+            }
+        }
+    });
+
+    document.getElementById('procesarReporte').addEventListener('click', function () {
+        var fechaInicial = document.getElementById('fechaInicialTickets').value;
+        var fechaFinal = document.getElementById('fechaFinalTickets').value;
+
+        if (fechaFinal >= fechaInicial) {
+            fetch(`/Reporte/ObtenerReporteTickets?fechaInicial=${fechaInicial}&fechaFinal=${fechaFinal}`)
+                .then(response => response.json())
+                .then(data => {
+                    let totalTickets = data.reduce((sum, item) => sum + item.cantidad, 0);
+                    let tablaContenido = data.map(item => {
+                        let porcentaje = ((item.cantidad / totalTickets) * 100).toFixed(2) + '%';
+                        return `<tr>
+                                    <td>${item.nivel}</td>
+                                    <td>${item.cantidad}</td>
+                                    <td>${porcentaje}</td>
+                                </tr>`;
+                    }).join('');
+                    document.getElementById('tablaReporteTickets').innerHTML = tablaContenido;
+                    document.getElementById('totalTickets').innerText = totalTickets;
+                })
+                .catch(error => {
+                    console.error('Se ha producido un error:', error);
+                });
+        } else {
+            if (fechaFinal == '' || fechaInicial == '') {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Por favor seleccionar Fecha Inicial y Fecha Final.'
+                });
+            } else {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'La fecha inicial no debe ser mayor a la fecha final.'
+                });
+            }
+        }
+    });
+
+    document.getElementById('descargarExcel').addEventListener('click', function () {
+        var fechaInicial = document.getElementById('fechaInicialTickets').value;
+        var fechaFinal = document.getElementById('fechaFinalTickets').value;
+
+        if (fechaFinal >= fechaInicial) {
+            var nombreArchivo = 'ReporteTickets_' + obtenerFechaActual() + '.xlsx';
+            var url = `/Reporte/DescargarReporteTickets?fechaInicial=${fechaInicial}&fechaFinal=${fechaFinal}`;
+
+            var enlaceTemporal = document.createElement('a');
+            enlaceTemporal.setAttribute('href', url);
+            enlaceTemporal.setAttribute('download', nombreArchivo);
+            enlaceTemporal.click();
+        } else {
+            if (fechaFinal == '' || fechaInicial == '') {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Por favor seleccionar Fecha Inicial y Fecha Final.'
+                });
+            } else {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'La fecha inicial no debe ser mayor a la fecha final.'
+                });
+            }
+        }
+    });
+
+        document.getElementById('procesarReporte').addEventListener('click', function () {
+        var fechaInicial = document.getElementById('fechaInicialTickets').value;
+        var fechaFinal = document.getElementById('fechaFinalTickets').value;
+
+        if (fechaFinal >= fechaInicial) {
+            fetch(`/Reporte/ObtenerReporteTickets?fechaInicial=${fechaInicial}&fechaFinal=${fechaFinal}`)
+                .then(response => response.json())
+                .then(data => {
+                    let totalTickets = data.reduce((sum, item) => sum + item.cantidad, 0);
+                    let tablaContenido = data.map(item => {
+                        let porcentaje = ((item.cantidad / totalTickets) * 100).toFixed(2) + '%';
+                        return `<tr>
+                                    <td>${item.nivel}</td>
+                                    <td>${item.cantidad}</td>
+                                    <td>${porcentaje}</td>
+                                </tr>`;
+                    }).join('');
+                    document.getElementById('tablaReporteTickets').innerHTML = tablaContenido;
+                    document.getElementById('totalTickets').innerText = totalTickets;
+                })
+                .catch(error => {
+                    console.error('Se ha producido un error:', error);
+                });
+        } else {
+            if (fechaFinal == '' || fechaInicial == '') {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Por favor seleccionar Fecha Inicial y Fecha Final.'
+                });
+            } else {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'La fecha inicial no debe ser mayor a la fecha final.'
+                });
+            }
+        }
+    });
+
+    document.getElementById('descargarExcel').addEventListener('click', function () {
+        var fechaInicial = document.getElementById('fechaInicialTickets').value;
+        var fechaFinal = document.getElementById('fechaFinalTickets').value;
+
+        if (fechaFinal >= fechaInicial) {
+            var nombreArchivo = 'ReporteTickets_' + obtenerFechaActual() + '.xlsx';
+            var url = `/Reporte/DescargarReporteTickets?fechaInicial=${fechaInicial}&fechaFinal=${fechaFinal}`;
+
+            var enlaceTemporal = document.createElement('a');
+            enlaceTemporal.setAttribute('href', url);
+            enlaceTemporal.setAttribute('download', nombreArchivo);
+            enlaceTemporal.click();
+        } else {
+            if (fechaFinal == '' || fechaInicial == '') {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Por favor seleccionar Fecha Inicial y Fecha Final.'
+                });
+            } else {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'La fecha inicial no debe ser mayor a la fecha final.'
+                });
+            }
+        }
+    });
+
+    function obtenerFechaActual() {
+        var fecha = new Date();
+        var año = fecha.getFullYear();
+        var mes = agregarCeros(fecha.getMonth() + 1);
+        var dia = agregarCeros(fecha.getDate());
+        var hora = agregarCeros(fecha.getHours());
+        var minutos = agregarCeros(fecha.getMinutes());
+        var segundos = agregarCeros(fecha.getSeconds());
+        return año + mes + dia + hora + minutos + segundos;
+    }
+
+    // Función auxiliar para agregar ceros a la izquierda si es necesario
+    function agregarCeros(numero) {
+        return numero < 10 ? '0' + numero : numero;
+    }
+</script>
+

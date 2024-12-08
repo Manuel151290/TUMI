@@ -1,0 +1,88 @@
+﻿@using TUMI.TIC.Modelo.Entidades
+@model TUMI.TIC.ClienteWeb.Models.ModeloColaborador.DetalleGetColaborador;
+@{
+    System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("es-PE");
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-md-12 m-b-30">
+        <!-- begin page title -->
+        <div class="d-block d-sm-flex flex-nowrap align-items-center">
+            <div class="page-title mb-2 mb-sm-0">
+                <h1>Mantenimiento de Personal</h1>
+            </div>
+            <div class="ml-auto d-flex align-items-center">
+                <nav>
+                    <ol class="breadcrumb p-0 m-b-0">
+                        <li class="breadcrumb-item">
+                            <a href="/Portal/Index"><i class="ti ti-home"></i></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            Personal
+                        </li>
+                        <li class="breadcrumb-item active text-primary" aria-current="page">Mantenimiento</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- end page title -->
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="card card-statistics">
+        <div class="card-header">
+            <div class="card-heading">
+                <h4 class="card-title">Editar Colaborador</h4>
+            </div>
+        </div>
+        <div class="card-body">
+            
+                <form method="post" asp-action="Actualizar">
+
+                
+                <div class="form-row">
+                    <div class="form-group col-md-3" style="display:none;">
+                        <label for="Codigo">Codigo</label>
+                        @Html.HiddenFor(m => m.oColaborador.Codigo, new { @name = "oColaborador.Codigo", @class = "form-control", @type = "text", placeholder = "Ingrese Codigo", maxlength = 6, required = true, autofocus = false, autocomplete = false })
+                        
+                    </div>
+                    <div class="form-group col-md-9">
+                        <label for="Nombre">Apellidos y Nombres</label>
+                        @Html.TextBoxFor(m => m.oColaborador.Nombre, new { @name = "oColaborador.Nombre", @class = "form-control", @type = "text", placeholder = "Ingrese Nombre", maxlength = 150, required = true, autofocus = true, autocomplete = false })
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="DocumentoIdentidad">Documento de identidad</label>
+                        @Html.TextBoxFor(m => m.oColaborador.DocumentoIdentidad, new { @name = "oColaborador.DocumentoIdentidad", @class = "form-control", @type = "text", placeholder = "Ingrese Documento de Identidad", maxlength = 8, required = true, autofocus = true, autocomplete = false })
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="Correo">Correo</label>
+                        @Html.TextBoxFor(m => m.oColaborador.Correo, new { @name = "oColaborador.Correo", @class = "form-control", @type = "email", placeholder = "Ingrese Correo", maxlength = 150, required = true, autofocus = false, autocomplete = false })
+                        
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="FechaNacimiento">Fecha de Nacimiento</label>
+                        @Html.TextBoxFor(m => m.oColaborador.FechaNacimiento, new { @name = "oColaborador.FechaNacimiento", @class = "form-control", @type = "date", placeholder = "Ingrese fecha nacimiento", required = true, autofocus = false, autocomplete = false })
+                       
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="CodigoOficina">Oficina</label>
+                        @Html.DropDownList("oColaborador.CodigoOficina", new SelectList((IEnumerable<Oficina>)Model.oListaOficinas, "Codigo", "Descripcion", Model.oColaborador.CodigoOficina), "-- Seleccione Oficina --", new { @name = "oColaborador.CodigoOficina", @class = "form-control" })
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="CodigoArea">UnidadOrganica</label>
+                        @Html.DropDownList("oColaborador.CodigoArea", new SelectList((IEnumerable<UnidadOrganica>)Model.oListaAreas, "Codigo", "Descripcion", Model.oColaborador.CodigoArea), "-- Seleccione Area --", new { @name = "oColaborador.CodigoArea", @class = "form-control" })
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="CodigoCargo">Cargo</label>
+                        @Html.DropDownList("oColaborador.CodigoCargo", new SelectList((IEnumerable<Cargo>)Model.oListaCargos, "Codigo", "Descripcion", Model.oColaborador.CodigoCargo), "-- Seleccione Cargo --", new { @name = "oColaborador.CodigoCargo", @class = "form-control" })
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="float: right;">ACTUALIZAR DATOS</button>
+            </form>
+        </div>
+    </div>
+</div>

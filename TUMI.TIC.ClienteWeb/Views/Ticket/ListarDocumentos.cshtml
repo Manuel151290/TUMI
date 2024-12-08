@@ -1,0 +1,42 @@
+﻿@using TUMI.TIC.Modelo.Entidades
+@model TUMI.TIC.ClienteWeb.Models.ModeloTicket.ViewModelTicketAtencion
+@{
+    Layout = "";
+}
+<br />
+<table id="datatable" class="display compact table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>TIPO</th>
+            <th>NOMBRE ARCHIVO</th>
+            <th>DESCARGAR</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (DocumentoTicket item in Model.oListaDocumentos)
+        {
+            <tr>
+                <td>@item.DescripcionTipoEvidencia</td>
+                <td>@item.NombreArchivo</td>
+                <td style="text-align:center;"><a href="/atenciones/@item.NombreArchivo" target="_blank" class="btn btn-danger">DESCARGAR</a></td>
+                <td style="text-align:center;">
+                    <button onclick="EliminarDocumento('@item.CodigoDocumento');" class="btn btn-icon btn-light"><i class="fa fa-trash"></i></button>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br />
+<script type="text/javascript">
+    $('#datatable').DataTable({
+        "bLengthChange": true,
+        "searching": true,
+        "bPaginate": true,
+        "bSortable": false,
+        language: {
+            url: '//cdn.datatables.net/plug-ins/2.0.3/i18n/es-ES.json',
+        }
+    });
+</script>
