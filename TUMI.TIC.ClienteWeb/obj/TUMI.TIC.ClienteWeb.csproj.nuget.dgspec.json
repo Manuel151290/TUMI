@@ -199,7 +199,18 @@
         "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Funciones\\TUMI.TIC.Funciones.csproj",
         "projectName": "TUMI.TIC.Funciones",
         "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Funciones\\TUMI.TIC.Funciones.csproj",
+        "packagesPath": "C:\\Users\\Alexander\\.nuget\\packages\\",
+        "projectStyle": "PackagesConfig",
         "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "C:\\Users\\Alexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Alexander\\Desktop\\pdfium": {}
+        },
         "frameworks": {
           "net48": {
             "projectReferences": {
@@ -211,7 +222,12 @@
               }
             }
           }
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low"
+        },
+        "packagesConfigPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Funciones\\packages.config"
       },
       "frameworks": {
         "net48": {}
@@ -258,7 +274,18 @@
         "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.SqlServer\\TUMI.TIC.Repositorio.SqlServer.csproj",
         "projectName": "TUMI.TIC.Repositorio.SqlServer",
         "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.SqlServer\\TUMI.TIC.Repositorio.SqlServer.csproj",
+        "packagesPath": "C:\\Users\\Alexander\\.nuget\\packages\\",
+        "projectStyle": "PackagesConfig",
         "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "C:\\Users\\Alexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Alexander\\Desktop\\pdfium": {}
+        },
         "frameworks": {
           "net48": {
             "projectReferences": {
@@ -273,7 +300,12 @@
               }
             }
           }
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low"
+        },
+        "packagesConfigPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.SqlServer\\packages.config"
       },
       "frameworks": {
         "net48": {}
