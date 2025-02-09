@@ -1,6 +1,12 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
 <div class="row">
     <div class="col-md-12 m-b-30">
         <!-- begin page title -->
@@ -135,46 +141,6 @@
         }
     });
 
-    document.getElementById('procesarReporte').addEventListener('click', function () {
-        var fechaInicial = document.getElementById('fechaInicialTickets').value;
-        var fechaFinal = document.getElementById('fechaFinalTickets').value;
-
-        if (fechaFinal >= fechaInicial) {
-            fetch(`/Reporte/ObtenerReporteTickets?fechaInicial=${fechaInicial}&fechaFinal=${fechaFinal}`)
-                .then(response => response.json())
-                .then(data => {
-                    let totalTickets = data.reduce((sum, item) => sum + item.cantidad, 0);
-                    let tablaContenido = data.map(item => {
-                        let porcentaje = ((item.cantidad / totalTickets) * 100).toFixed(2) + '%';
-                        return `<tr>
-                                    <td>${item.nivel}</td>
-                                    <td>${item.cantidad}</td>
-                                    <td>${porcentaje}</td>
-                                </tr>`;
-                    }).join('');
-                    document.getElementById('tablaReporteTickets').innerHTML = tablaContenido;
-                    document.getElementById('totalTickets').innerText = totalTickets;
-                })
-                .catch(error => {
-                    console.error('Se ha producido un error:', error);
-                });
-        } else {
-            if (fechaFinal == '' || fechaInicial == '') {
-                swal({
-                    type: 'error',
-                    title: 'Oops...',
-                    text: 'Por favor seleccionar Fecha Inicial y Fecha Final.'
-                });
-            } else {
-                swal({
-                    type: 'error',
-                    title: 'Oops...',
-                    text: 'La fecha inicial no debe ser mayor a la fecha final.'
-                });
-            }
-        }
-    });
-
     document.getElementById('descargarExcel').addEventListener('click', function () {
         var fechaInicial = document.getElementById('fechaInicialTickets').value;
         var fechaFinal = document.getElementById('fechaFinalTickets').value;
@@ -227,35 +193,6 @@
                 .catch(error => {
                     console.error('Se ha producido un error:', error);
                 });
-        } else {
-            if (fechaFinal == '' || fechaInicial == '') {
-                swal({
-                    type: 'error',
-                    title: 'Oops...',
-                    text: 'Por favor seleccionar Fecha Inicial y Fecha Final.'
-                });
-            } else {
-                swal({
-                    type: 'error',
-                    title: 'Oops...',
-                    text: 'La fecha inicial no debe ser mayor a la fecha final.'
-                });
-            }
-        }
-    });
-
-    document.getElementById('descargarExcel').addEventListener('click', function () {
-        var fechaInicial = document.getElementById('fechaInicialTickets').value;
-        var fechaFinal = document.getElementById('fechaFinalTickets').value;
-
-        if (fechaFinal >= fechaInicial) {
-            var nombreArchivo = 'ReporteTickets_' + obtenerFechaActual() + '.xlsx';
-            var url = `/Reporte/DescargarReporteTickets?fechaInicial=${fechaInicial}&fechaFinal=${fechaFinal}`;
-
-            var enlaceTemporal = document.createElement('a');
-            enlaceTemporal.setAttribute('href', url);
-            enlaceTemporal.setAttribute('download', nombreArchivo);
-            enlaceTemporal.click();
         } else {
             if (fechaFinal == '' || fechaInicial == '') {
                 swal({

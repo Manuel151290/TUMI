@@ -46,3 +46,15 @@ C:\Users\Alexander\Desktop\Rossini_Final\TUMI.TIC\TUMI.TIC.Dominio.Contratos\obj
 C:\Users\Alexander\Desktop\Rossini_Final\TUMI.TIC\TUMI.TIC.Dominio.Contratos\obj\Debug\TUMI.TIC.1460FEF5.Up2Date
 C:\Users\Alexander\Desktop\Rossini_Final\TUMI.TIC\TUMI.TIC.Dominio.Contratos\obj\Debug\TUMI.TIC.Dominio.Contratos.dll
 C:\Users\Alexander\Desktop\Rossini_Final\TUMI.TIC\TUMI.TIC.Dominio.Contratos\obj\Debug\TUMI.TIC.Dominio.Contratos.pdb
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Dominio.Contratos\bin\Debug\TUMI.TIC.Dominio.Contratos.dll
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Dominio.Contratos\bin\Debug\TUMI.TIC.Dominio.Contratos.pdb
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Dominio.Contratos\bin\Debug\Microsoft.Analytics.Interfaces.dll
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Dominio.Contratos\bin\Debug\Microsoft.Analytics.Interfaces.Streaming.dll
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Dominio.Contratos\bin\Debug\Microsoft.Analytics.Types.dll
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Dominio.Contratos\bin\Debug\TUMI.TIC.Modelo.dll
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Dominio.Contratos\bin\Debug\TUMI.TIC.Modelo.pdb
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Dominio.Contratos\obj\Debug\TUMI.TIC.Dominio.Contratos.csproj.AssemblyReference.cache
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Dominio.Contratos\obj\Debug\TUMI.TIC.Dominio.Contratos.csproj.CoreCompileInputs.cache
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Dominio.Contratos\obj\Debug\TUMI.TIC.1460FEF5.Up2Date
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Dominio.Contratos\obj\Debug\TUMI.TIC.Dominio.Contratos.dll
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Dominio.Contratos\obj\Debug\TUMI.TIC.Dominio.Contratos.pdb

@@ -160,8 +160,13 @@ namespace TUMI.TIC.ClienteWeb.Controllers.Web
         {
             try
             {
+                // Validar fechas
+                if (fechaInicial == DateTime.MinValue || fechaFinal == DateTime.MinValue || fechaFinal < fechaInicial)
+                {
+                    return Json(new { success = false, message = "Por favor seleccionar fechas válidas." });
+                }
                 List<ReporteCalificaciones> reporte = _ticketDominio.ObtenerReporteCalificaciones(fechaInicial, fechaFinal);
-                return Json(reporte);
+                return Json(new { success = true, data = reporte });
             }
             catch (Exception ex)
             {
@@ -174,6 +179,12 @@ namespace TUMI.TIC.ClienteWeb.Controllers.Web
         {
             try
             {
+                // Validar fechas
+                if (fechaInicial == DateTime.MinValue || fechaFinal == DateTime.MinValue || fechaFinal < fechaInicial)
+                {
+                    TempData["ErrorMessage"] = "Por favor seleccionar fechas válidas.";
+                    return RedirectToAction("Index");
+                }
                 List<ReporteCalificaciones> reporte = _ticketDominio.ObtenerReporteCalificaciones(fechaInicial, fechaFinal);
 
                 string carpetaTemporal = _configuration["RutaTemporal"];

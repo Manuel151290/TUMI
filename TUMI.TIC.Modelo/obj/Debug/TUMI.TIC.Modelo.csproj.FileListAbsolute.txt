@@ -38,3 +38,13 @@ C:\Users\Alexander\Desktop\Rossini_Final\TUMI.TIC\TUMI.TIC.Modelo\obj\Debug\TUMI
 C:\Users\Alexander\Desktop\Rossini_Final\TUMI.TIC\TUMI.TIC.Modelo\obj\Debug\TUMI.TIC.72A58A30.Up2Date
 C:\Users\Alexander\Desktop\Rossini_Final\TUMI.TIC\TUMI.TIC.Modelo\obj\Debug\TUMI.TIC.Modelo.dll
 C:\Users\Alexander\Desktop\Rossini_Final\TUMI.TIC\TUMI.TIC.Modelo\obj\Debug\TUMI.TIC.Modelo.pdb
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Modelo\bin\Debug\TUMI.TIC.Modelo.dll
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Modelo\bin\Debug\TUMI.TIC.Modelo.pdb
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Modelo\bin\Debug\Microsoft.Analytics.Interfaces.dll
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Modelo\bin\Debug\Microsoft.Analytics.Interfaces.Streaming.dll
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Modelo\bin\Debug\Microsoft.Analytics.Types.dll
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Modelo\obj\Debug\TUMI.TIC.Modelo.csproj.AssemblyReference.cache
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Modelo\obj\Debug\TUMI.TIC.Modelo.csproj.CoreCompileInputs.cache
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Modelo\obj\Debug\TUMI.TIC.72A58A30.Up2Date
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Modelo\obj\Debug\TUMI.TIC.Modelo.dll
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Modelo\obj\Debug\TUMI.TIC.Modelo.pdb

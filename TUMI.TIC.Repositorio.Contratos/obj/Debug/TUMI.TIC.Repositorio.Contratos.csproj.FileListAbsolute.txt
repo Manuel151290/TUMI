@@ -46,3 +46,15 @@ C:\Users\Alexander\Desktop\Rossini_Final\TUMI.TIC\TUMI.TIC.Repositorio.Contratos
 C:\Users\Alexander\Desktop\Rossini_Final\TUMI.TIC\TUMI.TIC.Repositorio.Contratos\obj\Debug\TUMI.TIC.2DCC588D.Up2Date
 C:\Users\Alexander\Desktop\Rossini_Final\TUMI.TIC\TUMI.TIC.Repositorio.Contratos\obj\Debug\TUMI.TIC.Repositorio.Contratos.dll
 C:\Users\Alexander\Desktop\Rossini_Final\TUMI.TIC\TUMI.TIC.Repositorio.Contratos\obj\Debug\TUMI.TIC.Repositorio.Contratos.pdb
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Repositorio.Contratos\bin\Debug\TUMI.TIC.Repositorio.Contratos.dll
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Repositorio.Contratos\bin\Debug\TUMI.TIC.Repositorio.Contratos.pdb
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Repositorio.Contratos\bin\Debug\Microsoft.Analytics.Interfaces.dll
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Repositorio.Contratos\bin\Debug\Microsoft.Analytics.Interfaces.Streaming.dll
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Repositorio.Contratos\bin\Debug\Microsoft.Analytics.Types.dll
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Repositorio.Contratos\bin\Debug\TUMI.TIC.Modelo.dll
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Repositorio.Contratos\bin\Debug\TUMI.TIC.Modelo.pdb
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Repositorio.Contratos\obj\Debug\TUMI.TIC.Repositorio.Contratos.csproj.AssemblyReference.cache
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Repositorio.Contratos\obj\Debug\TUMI.TIC.Repositorio.Contratos.csproj.CoreCompileInputs.cache
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Repositorio.Contratos\obj\Debug\TUMI.TIC.2DCC588D.Up2Date
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Repositorio.Contratos\obj\Debug\TUMI.TIC.Repositorio.Contratos.dll
+C:\Users\Alexander\Desktop\ROSSINI_TODO\Rossini_Final\TUMI.TIC\TUMI.TIC.Repositorio.Contratos\obj\Debug\TUMI.TIC.Repositorio.Contratos.pdb

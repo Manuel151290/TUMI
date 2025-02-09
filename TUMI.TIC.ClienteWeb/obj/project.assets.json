@@ -1714,11 +1714,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.ClienteWeb\\TUMI.TIC.ClienteWeb.csproj",
+      "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.ClienteWeb\\TUMI.TIC.ClienteWeb.csproj",
       "projectName": "TUMI.TIC.ClienteWeb",
-      "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.ClienteWeb\\TUMI.TIC.ClienteWeb.csproj",
+      "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.ClienteWeb\\TUMI.TIC.ClienteWeb.csproj",
       "packagesPath": "C:\\Users\\Alexander\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.ClienteWeb\\obj\\",
+      "outputPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.ClienteWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1740,23 +1740,23 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.BloqueDatos\\TUMI.TIC.BloqueDatos.csproj": {
-              "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.BloqueDatos\\TUMI.TIC.BloqueDatos.csproj"
+            "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.BloqueDatos\\TUMI.TIC.BloqueDatos.csproj": {
+              "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.BloqueDatos\\TUMI.TIC.BloqueDatos.csproj"
             },
-            "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj": {
-              "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj"
+            "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj": {
+              "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj"
             },
-            "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio.Contratos\\TUMI.TIC.Dominio.Contratos.csproj": {
-              "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio.Contratos\\TUMI.TIC.Dominio.Contratos.csproj"
+            "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio.Contratos\\TUMI.TIC.Dominio.Contratos.csproj": {
+              "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio.Contratos\\TUMI.TIC.Dominio.Contratos.csproj"
             },
-            "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio\\TUMI.TIC.Dominio.csproj": {
-              "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio\\TUMI.TIC.Dominio.csproj"
+            "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio\\TUMI.TIC.Dominio.csproj": {
+              "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio\\TUMI.TIC.Dominio.csproj"
             },
-            "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Funciones\\TUMI.TIC.Funciones.csproj": {
-              "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Funciones\\TUMI.TIC.Funciones.csproj"
+            "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Funciones\\TUMI.TIC.Funciones.csproj": {
+              "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Funciones\\TUMI.TIC.Funciones.csproj"
             },
-            "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj": {
-              "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj"
+            "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj": {
+              "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj"
             }
           }
         }

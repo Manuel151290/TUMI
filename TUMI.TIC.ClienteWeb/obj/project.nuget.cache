@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t1HkjPvwr7M=",
+  "dgSpecHash": "eUb0rgBLJSw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.ClienteWeb\\TUMI.TIC.ClienteWeb.csproj",
+  "projectFilePath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.ClienteWeb\\TUMI.TIC.ClienteWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alexander\\.nuget\\packages\\dapper\\2.1.28\\dapper.2.1.28.nupkg.sha512",
     "C:\\Users\\Alexander\\.nuget\\packages\\epplus\\7.1.0\\epplus.7.1.0.nupkg.sha512",

@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.ClienteWeb\\TUMI.TIC.ClienteWeb.csproj": {}
+    "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.ClienteWeb\\TUMI.TIC.ClienteWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.BloqueDatos\\TUMI.TIC.BloqueDatos.csproj": {
+    "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.BloqueDatos\\TUMI.TIC.BloqueDatos.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.BloqueDatos\\TUMI.TIC.BloqueDatos.csproj",
+        "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.BloqueDatos\\TUMI.TIC.BloqueDatos.csproj",
         "projectName": "TUMI.TIC.BloqueDatos",
-        "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.BloqueDatos\\TUMI.TIC.BloqueDatos.csproj",
+        "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.BloqueDatos\\TUMI.TIC.BloqueDatos.csproj",
         "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net48": {
@@ -20,14 +20,14 @@
         "net48": {}
       }
     },
-    "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.ClienteWeb\\TUMI.TIC.ClienteWeb.csproj": {
+    "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.ClienteWeb\\TUMI.TIC.ClienteWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.ClienteWeb\\TUMI.TIC.ClienteWeb.csproj",
+        "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.ClienteWeb\\TUMI.TIC.ClienteWeb.csproj",
         "projectName": "TUMI.TIC.ClienteWeb",
-        "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.ClienteWeb\\TUMI.TIC.ClienteWeb.csproj",
+        "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.ClienteWeb\\TUMI.TIC.ClienteWeb.csproj",
         "packagesPath": "C:\\Users\\Alexander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.ClienteWeb\\obj\\",
+        "outputPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.ClienteWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,23 +49,23 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.BloqueDatos\\TUMI.TIC.BloqueDatos.csproj": {
-                "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.BloqueDatos\\TUMI.TIC.BloqueDatos.csproj"
+              "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.BloqueDatos\\TUMI.TIC.BloqueDatos.csproj": {
+                "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.BloqueDatos\\TUMI.TIC.BloqueDatos.csproj"
               },
-              "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj": {
-                "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj"
+              "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj": {
+                "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj"
               },
-              "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio.Contratos\\TUMI.TIC.Dominio.Contratos.csproj": {
-                "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio.Contratos\\TUMI.TIC.Dominio.Contratos.csproj"
+              "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio.Contratos\\TUMI.TIC.Dominio.Contratos.csproj": {
+                "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio.Contratos\\TUMI.TIC.Dominio.Contratos.csproj"
               },
-              "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio\\TUMI.TIC.Dominio.csproj": {
-                "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio\\TUMI.TIC.Dominio.csproj"
+              "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio\\TUMI.TIC.Dominio.csproj": {
+                "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio\\TUMI.TIC.Dominio.csproj"
               },
-              "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Funciones\\TUMI.TIC.Funciones.csproj": {
-                "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Funciones\\TUMI.TIC.Funciones.csproj"
+              "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Funciones\\TUMI.TIC.Funciones.csproj": {
+                "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Funciones\\TUMI.TIC.Funciones.csproj"
               },
-              "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj": {
-                "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj"
+              "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj": {
+                "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj"
               }
             }
           }
@@ -126,11 +126,11 @@
         }
       }
     },
-    "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj": {
+    "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj",
         "projectName": "TUMI.TIC.Data",
-        "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj",
+        "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj",
         "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net48": {
@@ -142,17 +142,17 @@
         "net48": {}
       }
     },
-    "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio.Contratos\\TUMI.TIC.Dominio.Contratos.csproj": {
+    "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio.Contratos\\TUMI.TIC.Dominio.Contratos.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio.Contratos\\TUMI.TIC.Dominio.Contratos.csproj",
+        "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio.Contratos\\TUMI.TIC.Dominio.Contratos.csproj",
         "projectName": "TUMI.TIC.Dominio.Contratos",
-        "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio.Contratos\\TUMI.TIC.Dominio.Contratos.csproj",
+        "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio.Contratos\\TUMI.TIC.Dominio.Contratos.csproj",
         "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj": {
-                "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj"
+              "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj": {
+                "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj"
               }
             }
           }
@@ -162,29 +162,29 @@
         "net48": {}
       }
     },
-    "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio\\TUMI.TIC.Dominio.csproj": {
+    "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio\\TUMI.TIC.Dominio.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio\\TUMI.TIC.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio\\TUMI.TIC.Dominio.csproj",
         "projectName": "TUMI.TIC.Dominio",
-        "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio\\TUMI.TIC.Dominio.csproj",
+        "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio\\TUMI.TIC.Dominio.csproj",
         "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj": {
-                "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj"
+              "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj": {
+                "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj"
               },
-              "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio.Contratos\\TUMI.TIC.Dominio.Contratos.csproj": {
-                "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio.Contratos\\TUMI.TIC.Dominio.Contratos.csproj"
+              "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio.Contratos\\TUMI.TIC.Dominio.Contratos.csproj": {
+                "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Dominio.Contratos\\TUMI.TIC.Dominio.Contratos.csproj"
               },
-              "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj": {
-                "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj"
+              "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj": {
+                "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj"
               },
-              "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.Contratos\\TUMI.TIC.Repositorio.Contratos.csproj": {
-                "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.Contratos\\TUMI.TIC.Repositorio.Contratos.csproj"
+              "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.Contratos\\TUMI.TIC.Repositorio.Contratos.csproj": {
+                "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.Contratos\\TUMI.TIC.Repositorio.Contratos.csproj"
               },
-              "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.SqlServer\\TUMI.TIC.Repositorio.SqlServer.csproj": {
-                "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.SqlServer\\TUMI.TIC.Repositorio.SqlServer.csproj"
+              "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.SqlServer\\TUMI.TIC.Repositorio.SqlServer.csproj": {
+                "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.SqlServer\\TUMI.TIC.Repositorio.SqlServer.csproj"
               }
             }
           }
@@ -194,50 +194,34 @@
         "net48": {}
       }
     },
-    "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Funciones\\TUMI.TIC.Funciones.csproj": {
+    "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Funciones\\TUMI.TIC.Funciones.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Funciones\\TUMI.TIC.Funciones.csproj",
+        "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Funciones\\TUMI.TIC.Funciones.csproj",
         "projectName": "TUMI.TIC.Funciones",
-        "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Funciones\\TUMI.TIC.Funciones.csproj",
-        "packagesPath": "C:\\Users\\Alexander\\.nuget\\packages\\",
-        "projectStyle": "PackagesConfig",
+        "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Funciones\\TUMI.TIC.Funciones.csproj",
         "UsingMicrosoftNETSdk": false,
-        "configFilePaths": [
-          "C:\\Users\\Alexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\Alexander\\Desktop\\pdfium": {}
-        },
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.BloqueDatos\\TUMI.TIC.BloqueDatos.csproj": {
-                "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.BloqueDatos\\TUMI.TIC.BloqueDatos.csproj"
+              "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.BloqueDatos\\TUMI.TIC.BloqueDatos.csproj": {
+                "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.BloqueDatos\\TUMI.TIC.BloqueDatos.csproj"
               },
-              "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj": {
-                "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj"
+              "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj": {
+                "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj"
               }
             }
           }
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low"
-        },
-        "packagesConfigPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Funciones\\packages.config"
+        }
       },
       "frameworks": {
         "net48": {}
       }
     },
-    "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj": {
+    "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj",
+        "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj",
         "projectName": "TUMI.TIC.Modelo",
-        "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj",
+        "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj",
         "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net48": {
@@ -249,17 +233,17 @@
         "net48": {}
       }
     },
-    "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.Contratos\\TUMI.TIC.Repositorio.Contratos.csproj": {
+    "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.Contratos\\TUMI.TIC.Repositorio.Contratos.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.Contratos\\TUMI.TIC.Repositorio.Contratos.csproj",
+        "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.Contratos\\TUMI.TIC.Repositorio.Contratos.csproj",
         "projectName": "TUMI.TIC.Repositorio.Contratos",
-        "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.Contratos\\TUMI.TIC.Repositorio.Contratos.csproj",
+        "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.Contratos\\TUMI.TIC.Repositorio.Contratos.csproj",
         "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj": {
-                "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj"
+              "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj": {
+                "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj"
               }
             }
           }
@@ -269,43 +253,27 @@
         "net48": {}
       }
     },
-    "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.SqlServer\\TUMI.TIC.Repositorio.SqlServer.csproj": {
+    "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.SqlServer\\TUMI.TIC.Repositorio.SqlServer.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.SqlServer\\TUMI.TIC.Repositorio.SqlServer.csproj",
+        "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.SqlServer\\TUMI.TIC.Repositorio.SqlServer.csproj",
         "projectName": "TUMI.TIC.Repositorio.SqlServer",
-        "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.SqlServer\\TUMI.TIC.Repositorio.SqlServer.csproj",
-        "packagesPath": "C:\\Users\\Alexander\\.nuget\\packages\\",
-        "projectStyle": "PackagesConfig",
+        "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.SqlServer\\TUMI.TIC.Repositorio.SqlServer.csproj",
         "UsingMicrosoftNETSdk": false,
-        "configFilePaths": [
-          "C:\\Users\\Alexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\Alexander\\Desktop\\pdfium": {}
-        },
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj": {
-                "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj"
+              "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj": {
+                "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Data\\TUMI.TIC.Data.csproj"
               },
-              "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj": {
-                "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj"
+              "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj": {
+                "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Modelo\\TUMI.TIC.Modelo.csproj"
               },
-              "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.Contratos\\TUMI.TIC.Repositorio.Contratos.csproj": {
-                "projectPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.Contratos\\TUMI.TIC.Repositorio.Contratos.csproj"
+              "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.Contratos\\TUMI.TIC.Repositorio.Contratos.csproj": {
+                "projectPath": "C:\\Users\\Alexander\\Desktop\\ROSSINI_TODO\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.Contratos\\TUMI.TIC.Repositorio.Contratos.csproj"
               }
             }
           }
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low"
-        },
-        "packagesConfigPath": "C:\\Users\\Alexander\\Desktop\\Rossini_Final\\TUMI.TIC\\TUMI.TIC.Repositorio.SqlServer\\packages.config"
+        }
       },
       "frameworks": {
         "net48": {}
