@@ -294,7 +294,7 @@ namespace TUMI.TIC.Repositorio.SqlServer
                 return oLista;
             }
         }
-        string probe1= "";
+        string prototo= "";
         public List<ReporteCalificaciones> ObtenerReporteCalificaciones(DateTime fechaInicial, DateTime fechaFinal)
         {
             List<ReporteCalificaciones> oLista = new List<ReporteCalificaciones>();
