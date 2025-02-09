@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TUMI.TIC.ClienteWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14f70cefbf62cf502b7a5109e7be937798504d1d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c89cced366b3833fcd094afde4f30d4d2a062f84")]
 [assembly: System.Reflection.AssemblyProductAttribute("TUMI.TIC.ClienteWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TUMI.TIC.ClienteWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
